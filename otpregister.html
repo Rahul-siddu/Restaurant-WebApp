@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OTP Registration Page</title>
+
+    <link rel="stylesheet" href="registration.css">
+
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div >
+                <img
+                    src="https://placehold.co/200x80?text=ShopLogo" alt="Shop Now">
+            </div>
+        </nav>
+    </header>
+
+    <div class="form-container">
+
+        <form class="otp-form login-form">
+
+            <h2>OTP Verification</h2>
+
+            <p class="otp-instruction">Enter the 4-digit OTP sent to your registered mobile number.</p>
+
+            <div class="otp-inputs">
+
+                <input type="text" class="otp-input" pattern="[0-9]*" inputmode="numeric" maxlength="1" required>
+
+                <input type="text" class="otp-input" pattern="[0-9]*" inputmode="numeric" maxlength="1" required>
+
+                <input type="text" class="otp-input" pattern="[0-9]*" inputmode="numeric" maxlength="1" required>
+
+                <input type="text" class="otp-input" pattern="[0-9]*" inputmode="numeric" maxlength="1" required>
+
+            </div>
+
+
+
+            <p class="resend-info">
+
+                Didn't receive the OTP?
+
+                <a href="#" class="resend-link">Resend OTP</a>
+
+            </p>
+
+
+
+            <button type="submit">Verify</button>
+
+        </form>
+
+    </div>
+    <script>
+        const otpinputs = document.querySelectorAll(".otp-input");
+        otpinputs.forEach((inputNode , index) => {
+            inputNode.addEventListener("input", () => {
+                 if (inputNode.value.length === 1 && index < otpinputs.length - 1) {
+                otpinputs[index + 1].focus()
+            }
+            })
+
+            inputNode.addEventListener("keydown", (e) => {
+                 if (e.key === "Backspace" && index > 0 && inputNode.value.length === 0) {
+                otpinputs[index - 1].focus()
+            }
+            })
+           
+        })
+    </script>
+</body>
+
+</html>

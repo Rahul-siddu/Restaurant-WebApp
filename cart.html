@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+<body>
+    <section class="cart-section">
+      <h2>Your Cart</h2>
+      <div id="cart-container">
+        <!-- <div class="cart-item">
+          <div class="cart-item-details-left">
+              <img src="https://placehold.co/150x80?text=Mango+Lassi" alt="Lassi">
+              <div class="cart-item-details">
+                <h4>Mango Lassi</h4>
+                <p>Price: $10.99</p>
+                <p>Total: $43.96</p>
+                <div class="controls-container">
+                  <p>Quantity:</p>
+                  <div class="quantity-selector">
+                    <button onclick="decreaseQuantity()"> − </button>
+                    <input type="number" id="quantity" value="1" min="1" readonly>
+                    <button onclick="increaseQuantity()"> + </button>
+                  </div>
+                  <div class="remove-button">Remove</div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <div class="cart-item-details-left">
+              <img src="https://placehold.co/150x80?text=Mango+Lassi" alt="Lassi">
+              <div class="cart-item-details">
+                <h4>Mango Lassi</h4>
+                <p>Price: $10.99</p>
+                <p>Total: $43.96</p>
+                <div class="controls-container">
+                  <p>Quantity:</p>
+                  <div class="quantity-selector">
+                    <button onclick="decreaseQuantity()"> − </button>
+                    <input type="number" id="quantity" value="1" min="1" readonly>
+                    <button onclick="increaseQuantity()"> + </button>
+                  </div>
+                  <div class="remove-button">Remove</div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <div class="cart-item-details-left">
+              <img src="https://placehold.co/150x80?text=Mango+Lassi" alt="Lassi">
+              <div class="cart-item-details">
+                <h4>Mango Lassi</h4>
+                <p>Price: $10.99</p>
+                <p>Total: $43.96</p>
+                <div class="controls-container">
+                  <p>Quantity:</p>
+                  <div class="quantity-selector">
+                    <button onclick="decreaseQuantity()"> − </button>
+                    <input type="number" id="quantity" value="1" min="1" readonly>
+                    <button onclick="increaseQuantity()"> + </button>
+                  </div>
+                  <div class="remove-button">Remove</div>
+                </div>
+              </div>
+          </div>
+        </div> -->
+      </div>
+      <div id="empty-message" style="display: none">
+        <p>
+          Your cart is empty. Explore our <a href="menupage.html" onclick="updateTab(1)">menu</a> to add
+          items.
+        </p>
+      </div>
+      <div id="cart-total">
+        <p>Total: $<span id="total-price"></span></p>
+        <button onclick="openModal()" id="checkout-btn">
+          Proceed to Checkout
+        </button>
+      </div>
+    </section>
+    <script  type="module" src="cart.js"></script>
+</body>
+</html>

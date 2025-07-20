@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us Page</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="orderstyle.css" />
+  </head>
+  <body>
+    <!-- Order Section -->
+    <section class="order-section">
+      <h1 class="order-title">Your Order</h1>
+
+      <!-- Table -->
+      <table class="order-table">
+        <thead class="order-table-head">
+          <tr>
+            <th class="order-table-head-cell">Order No.</th>
+            <th class="order-table-head-cell">Order details</th>
+
+            <th class="order-table-head-cell">Total Price</th>
+            <th class="order-table-head-cell">Status</th>
+          </tr>
+        </thead>
+        <tbody id="order-table-body">
+          <!-- If you want to dynamically add table rows instead -->
+        </tbody>
+      </table>
+
+      <div id="order-cards" class="order-cards-container">
+        <!-- Order cards will be dynamically added here -->
+      </div>
+
+      <!-- Order Cards -->
+    </section>
+    <script type="module" src="./orders.js"></script>
+      </body>
+      
+</html>
